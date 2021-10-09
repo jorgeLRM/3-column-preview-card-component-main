@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.6);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.6rem;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.3rem 2.5rem;
+    border-radius: 4rem;
+    color: #000;
+    background-color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    color: var(--very-light-gray);
+    background-color: transparent;
+}
+
+.btn-orange {
+    color: var(--bright-orange);
+}
+
+.btn-darkcyan {
+    color: var(--dark-cyan);
+}
+
+.btn-verydarkcyan {
+    color: var(--very-dark-cyan);
+}
+
+.container {
+    height: auto;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    max-width: 90%;
+    width: 90rem;
+    margin: 0 auto;
+
+    border-radius: 1rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+    }
+    .container {
+        height: 100vh;
+        padding: 0;
+    }
+}
+
+.card {
+    padding: 4rem 5rem;
+}
+
+.card-brightorange {
+    background-color: var(--bright-orange);
+}
+
+.card-darkcyan {
+    background-color: var(--dark-cyan);
+}
+
+.card-verydarkcyan {
+    background-color: var(--very-dark-cyan);
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+.card-description {
+    color: var(--transparent-white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .card-description {
+        margin-bottom: 8rem;
+    }
+}

@@ -24,7 +24,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/jorgeLRM/3-column-preview-card-component-main.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://jorgelrm.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
